@@ -1,0 +1,14 @@
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container>h1{
+    color: #fff;
+}
+
+.container>p{
+    text-align: center;
+    color: #fff;
+}
