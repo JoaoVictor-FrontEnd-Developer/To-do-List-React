@@ -13,7 +13,7 @@ function TodoForm({onAddItem, showMessageContainer, onClearMessage }) {
     const addItem = (e) => {
         e.preventDefault();
         if (!text) {
-          showMessageContainer('Nenhum texto adicionado', 'remove')
+          showMessageContainer('Nehuma tarefa inserida', 'remove')
           onClearMessage()
           return
       }
