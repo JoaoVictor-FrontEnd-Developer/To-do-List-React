@@ -107,6 +107,7 @@ function App() {
       <h1>To-do List</h1>
       <TodoForm
         onAddItem={onAddItem}
+        onClearMessage={onClearMessage}
         showMessageContainer={showMessageContainer } />
 
       {message &&

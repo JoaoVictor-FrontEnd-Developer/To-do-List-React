@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {AiOutlinePlus} from 'react-icons/ai'
 import styles from './TodoForm.module.css'
 
-function TodoForm({onAddItem, showMessageContainer}) {
+function TodoForm({onAddItem, showMessageContainer, onClearMessage }) {
   
     const [text, setText] = useState();
   
@@ -14,6 +14,7 @@ function TodoForm({onAddItem, showMessageContainer}) {
         e.preventDefault();
         if (!text) {
           showMessageContainer('Nenhum texto adicionado', 'remove')
+          onClearMessage()
           return
       }
         onAddItem(text)
