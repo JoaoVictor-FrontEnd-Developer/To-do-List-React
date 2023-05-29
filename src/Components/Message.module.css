@@ -2,10 +2,14 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    
 }
 
 .message_container>p{
-    padding: 5px;
+    padding: 5px 50px;
     color: #fff;
 }
 
@@ -15,4 +19,14 @@
 
 .remove{
     background-color: rgb(255, 55, 81)
+}
+
+@media screen and (max-width: 768px){
+    .message_container{
+        top: auto;
+        bottom: 2em;
+        right: 2em;
+        left: 2em;
+        
+    }
 }

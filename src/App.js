@@ -83,7 +83,7 @@ function App() {
     let it = Item(text)
     
     setItems([...items, it])
-    showMessageContainer('Tarefa Adionada', 'add')
+    showMessageContainer('Tarefa Adicionada', 'add')
     onClearMessage();
   
   }
