@@ -22,7 +22,7 @@ function saveState(state) {
 function loadState() {
 
   const actualState = localStorage.getItem('savedItems');
-  console.log(actualState)
+  
   if (actualState)
     return JSON.parse(actualState)
   else
