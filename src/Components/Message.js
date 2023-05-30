@@ -9,8 +9,8 @@ function Message() {
     const dispatch = useDispatch();
     const [visible, setVisible] = useState(false);
     
-    
     useEffect(() => {
+
         if (!message) {
             setVisible(false)
             return
@@ -25,7 +25,8 @@ function Message() {
         
         return () => clearTimeout(timer)
 
-    }, [message])
+
+    }, [message, dispatch])
 
     
 

@@ -8,11 +8,10 @@ import EditModal from './Components/EditModal'
 import listReducer from "./reducers/listReducer";
 import messageReducer from "./reducers/messageReducer";
 import Message from "./Components/Message";
-import { clearMessage } from "./actions/messageActions";
+
 
 import { createStore, combineReducers } from 'redux'
 import { Provider} from 'react-redux'
-
 
 
 function saveState(state) {
