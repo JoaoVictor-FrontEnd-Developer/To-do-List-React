@@ -4,11 +4,9 @@
     background-color: #fff;
     padding: 20px 20px;
     border-radius: 10px;
-    flex-wrap: wrap;
 }
 
 .form input, button{
-    
     border: none;
     margin: 5px 10px;
 }
@@ -47,4 +45,10 @@
 
 .form button:hover{
     scale: 105%;
+}
+
+@media screen and (max-width: 500px){
+    .form{
+        flex-direction: column;
+    }
 }
