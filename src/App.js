@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styles from './App.module.css'
 
 
@@ -8,6 +8,9 @@ import EditModal from './Components/EditModal'
 import listReducer from "./reducers/listReducer";
 import messageReducer from "./reducers/messageReducer";
 import Message from "./Components/Message";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 import { createStore, combineReducers } from 'redux'
@@ -40,6 +43,10 @@ store.subscribe(() => {
 
 function App() {
 
+  useEffect(() => {
+    Aos.init({duration: 500,});
+  }, [])
+
   
   const [showModal, setShowModal] = useState(false)
   const [item, setItem] = useState()
@@ -54,7 +61,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <h1>To-do List</h1>
+      <h1 data-aos="fade-right">To-do List</h1>
       <Provider store={store}>
         <TodoForm/>
         

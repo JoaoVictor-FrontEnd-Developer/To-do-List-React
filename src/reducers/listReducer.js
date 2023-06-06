@@ -20,6 +20,13 @@ function listReducer(state = [], action) {
                 }
                 return item
             })
+        case 'CHANGE_ANIMATION':
+            return state.map(item => {
+                if (item.id === action.payload) {
+                    item.animation = !item.animation
+                }
+                return item
+            })
         default:
             return state;
        

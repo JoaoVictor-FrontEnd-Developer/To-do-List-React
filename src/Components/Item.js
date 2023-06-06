@@ -5,7 +5,8 @@ function Item(text) {
     return {
         id: uuidv4(),
         text: text,
-        done: false
+        done: false,
+        animation: true,
     }
     
 }

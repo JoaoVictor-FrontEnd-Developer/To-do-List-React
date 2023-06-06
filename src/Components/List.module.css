@@ -35,3 +35,37 @@ ul li{
     text-decoration: line-through;
 }
 
+[data-aos="animation-in"] {
+    animation-duration: 500ms;
+    animation-name: fade-in;
+    animation-direction: alternate;
+    
+  }
+
+@keyframes fade-in {
+    0% { 
+        scale: 0%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+    
+}
+[data-aos="animation-out"] {
+    animation-duration: 500ms;
+    animation-name: fade-out;
+    animation-direction: alternate;
+    
+  }
+
+@keyframes fade-out {
+    0% { 
+        scale: 100%;
+    }
+
+    100% {
+        scale: 0%;
+    }
+    
+}

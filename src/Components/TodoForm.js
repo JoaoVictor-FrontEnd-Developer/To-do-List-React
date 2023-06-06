@@ -29,7 +29,7 @@ function TodoForm() {
   
   
     return (
-      <form className={styles.form}>
+      <form data-aos="fade-up" className={styles.form}>
         <input className={styles.input_form} onChange={Change} type="text" value={text} placeholder="Nova tarefa..." />
         <button className={styles.input_form } onClick={addItemEvent}>Adicionar<AiOutlinePlus className={styles.plus}/></button>
       </form>

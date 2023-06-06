@@ -16,3 +16,7 @@ export function doneItem(id) {
 export function updateItem(id, text) {
     return {type: 'UPDATE_ITEM', payload: id, text: text}
 }
+
+export function changeAnimation(id) {
+    return {type: 'CHANGE_ANIMATION', payload: id}
+}
