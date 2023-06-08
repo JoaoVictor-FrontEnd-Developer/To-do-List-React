@@ -6,7 +6,7 @@ import { updateItemMessage } from "../actions/messageActions";
 
 function EditModal({item, onShowModal}) {
 
-    const [text, setText] = useState();
+    const [text, setText] = useState(item.text);
     const dispatch = useDispatch();
 
   
@@ -36,7 +36,7 @@ function EditModal({item, onShowModal}) {
             <div className={styles.modal_container}>
                 <p>Tarefa: {item.text}</p>
                 <form>
-                    <input className={styles.input_edit} onChange={Change} type="text" placeholder="Novo título..."  />
+                    <input className={styles.input_edit} value={text} onChange={Change} type="text" placeholder="Novo título..."  />
                     <button className={styles.input_edit} onClick={UpdatedItem}>Atualizar</button>
                     </form>
                 </div>
